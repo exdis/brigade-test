@@ -15,7 +15,7 @@ events.on("simpleevent", e => {
     console.log(e);
     var job = new Job("do-nothing", "alpine:3.4")
     job.tasks = [
-        "echo Hello, I'am updated job",
+        "echo 'Hello from updated job'",
         "echo World from webhook"
     ]
 
